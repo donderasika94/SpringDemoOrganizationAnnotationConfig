@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:component-scan base-package="com.capgemini.spring.organization"/>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+<!--<beans
+   xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="
+      http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans.xsd" >
+	<context:property-placeholder location="classpath:dbconfig.properties"/>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:component-scan base-package="com.capgemini.spring.organization"/>
+<context:property-placeholder location="classpath:dbconfig.properties" />
+
+<bean id = "organization" class = "com.capgemini.spring.organization.model.Organization">
+	<property name ="Address" ref="address"/>
+	<property name="orgId" value="111"/>
+	<property name="orgName" value="Capgemini"/>
+	<property name ="marketPrice" value="11100.0"/>
+
+<util:list id="list" list-class="java.util.ArrayList">
+	<value>Paul Hermelin</value>
+            <value>Daniel Bernard</value>
+	<ref bean="organization"/>
+</util:list>
+
+<util:set id="set" set-class="java.util.HashSet">
+            <value>India</value>
+            <value>USA</value>
+	<ref bean="organization"/>
+  </util:set>
+
+<util:map id="map" map-class="java.util.HashMap">
+            <entry key = "INDIA" value = "Paul Hermelin"/>
+            <entry key = "USA" value = "Daniel Bernard"/>
+	<ref bean="organization"/>
+ </util:map>
+
+<property name="databaseDetails">
+	<props>
+		<prop key ="dbUser">${username}</prop>
+		<prop key="dbPassword">${password}</prop>
+	</props>
+</property>
+
+<property name ="ipAddresses">
+          <props>
+            <prop key ="admin">192.168.1.1</prop>
+            <prop key ="hr">192.168.1.2</prop>
+          </props>
+      </property>
+
+
+
+<bean id ="address" class="com.capgemini.spring.organization.model.Address">
+	<property name= "city" value="Airoli"/>
+	<property name= "state" value="Maharashtra"/>
+	<property name = "pincode" value="421301"/>
+</bean>-->
+
+
+

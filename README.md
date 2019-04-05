@@ -1,0 +1,2 @@
+SpringDemoOrganizationAnnotationconfig
+This folder contaions Organization assignments with Annotation Config
